@@ -123,6 +123,32 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &146699846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8410028887039653955, guid: 98d6db48b32b0a343bc5e57806b8c2b9, type: 3}
+  m_PrefabInstance: {fileID: 2094163892812376041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &146699851
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146699846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 72d16780fddc32841979b7286db086a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &354387669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 208683ae40e310b40b02623aa790271d, type: 3}
@@ -915,11 +941,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 585278434575144423, guid: 98d6db48b32b0a343bc5e57806b8c2b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.96
+      value: -6.13
       objectReference: {fileID: 0}
     - target: {fileID: 585278434575144423, guid: 98d6db48b32b0a343bc5e57806b8c2b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.37
+      value: 5.04
       objectReference: {fileID: 0}
     - target: {fileID: 585278434575144423, guid: 98d6db48b32b0a343bc5e57806b8c2b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -953,6 +979,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7248630447232050572, guid: 98d6db48b32b0a343bc5e57806b8c2b9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8410028887039653955, guid: 98d6db48b32b0a343bc5e57806b8c2b9, type: 3}
       propertyPath: m_Name
       value: Circle enemy
@@ -960,7 +990,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8410028887039653955, guid: 98d6db48b32b0a343bc5e57806b8c2b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 146699851}
   m_SourcePrefab: {fileID: 100100000, guid: 98d6db48b32b0a343bc5e57806b8c2b9, type: 3}
 --- !u!114 &2416226668322927853
 MonoBehaviour:
