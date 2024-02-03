@@ -25,9 +25,13 @@ public class Shooting : MonoBehaviour
     }
     void Update()
     {
-        AimHandler();
-        AnimationHandler();
-        HandelShooting();
+        if (anim.GetBool("isDead") == false)
+        {
+            AimHandler();
+            AnimationHandler();
+            AnimationHandler();
+            HandelShooting();
+        }
     }
     private void AimHandler()
     {

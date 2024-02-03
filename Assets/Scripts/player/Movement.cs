@@ -22,9 +22,12 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        MovementHandler();
-        JumpHandler();
-        AnimationHAndler();
+        if (anim.GetBool("isDead") == false)
+        {
+            MovementHandler();
+            JumpHandler();
+            AnimationHAndler();
+        }
     }
     private void MovementHandler()
     {
